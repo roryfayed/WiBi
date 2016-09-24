@@ -1,0 +1,18 @@
+extends layout 
+
+block content
+    each producer, i in producerList
+        div(class="container")
+            div(class="center")
+                div(class="card-panel")
+                    div(class="row")
+                        ul
+                            li
+                                a(href="#") #{producer.name}
+                            li Up to 
+                                p #{producer.upperBandwith} Mbps
+                            li Average bandwith 
+                                p #{producer.averageBandwith} Mbps
+                            li Cost per Megabyte
+                                p £ #{producer.priceRatio}
+                
